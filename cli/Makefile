@@ -1,6 +1,6 @@
 # packETHcli - ethernet packet generator
 # By Miha Jemec <jemcek@gmail.com>
-# Copyright 2014 Miha Jemec, 
+# Copyright 2014 Miha Jemec,
 
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -27,10 +27,11 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PREFIX = /usr
 
 CC = gcc
-CPPFLAGS =  
+CPPFLAGS =
 
-LDFLAGS = 
-CFLAGS = -g -Wall -Wunused -Wmissing-prototypes -Wmissing-declarations -Werror
+LDFLAGS =
+# CFLAGS = -g -Wall -Wunused -Wmissing-prototypes -Wmissing-declarations -Werror
+CFLAGS = -g -Wall -Wunused -Wmissing-prototypes -Wmissing-declarations
 CFLAGS += -O3
 LIBS =  -lm  -lpthread
 
@@ -60,4 +61,3 @@ test:
 
 clean:
 	rm -f $(OBJECTS) $(PROGRAM) *~ parse_snort_rules
-
