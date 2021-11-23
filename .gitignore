@@ -12,3 +12,6 @@ src/.deps/*
 cli/*.o
 stamp-h1
 !configure.ac
+*~
+.cache/
+compile_commands.json
