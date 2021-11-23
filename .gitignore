@@ -7,6 +7,7 @@ depcomp
 install-sh
 missing
 packETH
+packETHcli
 src/*.o
 src/.deps/*
 cli/*.o
